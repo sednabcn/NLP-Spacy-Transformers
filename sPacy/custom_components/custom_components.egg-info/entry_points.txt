@@ -1,0 +1,3 @@
+[console_scripts]
+custom_components-sample_1 = custom_components.script_custom_patterns:pattern_gen
+custom_components-sample_2 = custom_components.script_custom_ner:get_ner_component

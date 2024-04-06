@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: custom_components
+Version: 0.1.0
+Summary: Generate custom_ner_components
+Home-page: http://github.com/sednabcn/sPacy
+Author: Ruperto Pedro Bonet Chaple
+Author-email: ruperto.bonet@modelphysmat.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: OOP Python :: Code
+Requires-Dist: numpy
+Requires-Dist: sPacy
+Requires-Dist: pandas
+Requires-Dist: nltk
+
+Generation, build and save custom ner components.
