@@ -89,7 +89,7 @@ class Custom_ner_formulas_component():
                      nlp.add_pipe("ruler_sort_command", before="ner")
 
                      # List of custom labels used in your EntityRuler or custom component
-                     custom_labels = ['ARG', 'ARGN', 'ARGN','OPER']
+                     custom_labels = ['ARG', 'ARGN','OPER']
 
                      # Register each custom label in the nlp object's vocab
                      for label in custom_labels:

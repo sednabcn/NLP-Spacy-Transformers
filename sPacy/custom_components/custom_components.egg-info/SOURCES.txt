@@ -2,8 +2,10 @@ setup.py
 ./custom_components/script_custom_ner.py
 ./custom_components/script_custom_patterns.py
 custom_components/__init__.py
+custom_components/script_custom_entities.py
 custom_components/script_custom_ner.py
 custom_components/script_custom_patterns.py
+custom_components/script_normalize_datasets.py
 custom_components/utils.py
 custom_components.egg-info/PKG-INFO
 custom_components.egg-info/SOURCES.txt
@@ -15,10 +17,13 @@ custom_components.egg-info/top_level.txt
 custom_components/custom_ner/__init__.py
 custom_components/custom_ner/ruler_desc.py
 custom_components/custom_ner/ruler_formulas.py
+custom_components/custom_ner/wbp2jpg.py
 custom_components/patterns/__init__.py
 custom_components/patterns/generation.py
 custom_components/tests/__init__.py
 custom_components/tests/custom_desc_components.py
 custom_components/tests/custom_formulas_components.py
 custom_components/tests/test_desc.py
+custom_components/tests/test_entity_desc.py
+custom_components/tests/test_entity_formulas.py
 custom_components/tests/test_formulas.py
