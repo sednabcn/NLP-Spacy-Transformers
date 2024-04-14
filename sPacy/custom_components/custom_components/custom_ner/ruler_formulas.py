@@ -3,14 +3,18 @@ from spacy.language import Language
 from spacy.pipeline import EntityRuler
 import pandas as pd
 
-from ..utils import create_ruler
+from custom_components.utils.utils import create_ruler
 
 class Custom_ner_formulas_component():
-               def __init__(self,path_entity_name):
+               def __init__(self,path_entity_name,ner_bas_model=None):
                    self.entity_name=path_entity_name
+                   self.ner_base_model=ner_base_model
                    
                def get_entity_ruler(self):
-                     nlp = spacy.load("en_core_web_sm")
+                     if self.ner_base_model==None:
+                                    nlp = spacy.load("en_core_web_sm")
+                     else:
+                                    nlp= spacy.load(ner_base_model)
                      # Create component factories
                      @Language.component("ruler_arg")
                      def ruler_arg_component(doc):

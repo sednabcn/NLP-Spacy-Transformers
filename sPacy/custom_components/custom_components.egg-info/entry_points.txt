@@ -1,3 +1,5 @@
 [console_scripts]
-custom_components-sample_1 = custom_components.script_custom_patterns:pattern_gen
-custom_components-sample_2 = custom_components.script_custom_ner:get_ner_component
+custom_components-sample_1 = custom_components.scripts_.script_custom_patterns:pattern_gen
+custom_components-sample_2 = custom_components.scripts_.script_custom_ner:get_ner_component
+custom_components-sample_3 = custom_components.scripts_.script_custom_entities:get_ner_entity
+custom_components-sample_4 = custom_components.scripts_.script_normalize_datasets:get_normalization

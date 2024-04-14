@@ -2,14 +2,17 @@ import spacy
 from spacy.language import Language
 from spacy.pipeline import EntityRuler
 
-from ..utils import create_ruler
+from custom_components.utils.utils import create_ruler
 
 class Custom_ner_desc_component:
-               def __init__(self,path_entity_name):
+               def __init__(self,path_entity_name,ner_base_model=None):
                    self.entity_name=path_entity_name
-                   
+                   self.ner_base_model=ner_base_model
                def get_entity_ruler(self):
-                    nlp = spacy.load("en_core_web_sm")
+                    if self.ner_base_model==None:          
+                                   nlp = spacy.load("en_core_web_sm")
+                    else:
+                                   nlp =spacy.load(ner_base_model)
                     # Create rulers
                     
                     # Create component factories

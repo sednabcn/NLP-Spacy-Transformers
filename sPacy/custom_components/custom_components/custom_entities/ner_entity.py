@@ -1,16 +1,15 @@
 import os
 import spacy
 import pandas as pd
-import custom_components
-from custom_components.tests import custom_desc_components,custom_formulas_components
-
+from custom_components.custom_ner import custom_desc_components,custom_formulas_components
+from custom_components.utils.utils import set_entity
 
 class Custom_ner_entities:
 
-         def __init__(self,path_data,path_ner_entity,column_name):
-             self.path_data=path_data
+         def __init__(self,data,path_ner_entity,column_name):
+             self.data=data
              self.path_ner_entity=path_ner_entity
              self.column_name=column_name
 
-         def get_entity(self):
-             return set_entity(self.path_data,self.column_name,self.path_ner_entity)
+         def get_entity(self):     
+             return set_entity(self.data,self.column_name,self.path_ner_entity)

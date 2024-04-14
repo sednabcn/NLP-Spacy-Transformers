@@ -12,7 +12,7 @@ from spacy.matcher import matcher
 from spacy.tokens import span
 from spacy.language import Language
 from spacy.pipeline import EntityRuler
-from ..utils import normalize_formula, preproc_ent,tok_formulas,get_pos_,get_patterns
+from custom_components.utils.utils import normalize_formula, preproc_ent,tok_formulas,get_pos_,get_patterns
 
 
 nltk.download('punkt')
